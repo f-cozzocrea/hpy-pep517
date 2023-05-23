@@ -24,8 +24,6 @@ python3 setup.py bdist_wheel
 pip install . # FAILURE
 
 ## Different failure
-echo "[build-system]\nrequires = ["setuptools", "wheel", "hpy"]\nbuild-backend = "setuptools.build_meta"\n" >> pyproject.toml
-echo "\n" >> pyproject.toml
-echo "[project]\nname = "quickstart"\nversion = "0.0.1"
+mv pyproject.toml.new pyproject.toml
 python3 setup.py bdist_wheel # FAILURE
 ```

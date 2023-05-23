@@ -1,7 +1,3 @@
-[build-system]
-requires = ["setuptools>=67.0", "wheel", "hpy"]
-build-backend = "setuptools.build_meta"
-
 [project]
 name = "quickstart"
 version = "0.0.1"

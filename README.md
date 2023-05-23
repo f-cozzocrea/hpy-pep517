@@ -16,20 +16,9 @@ pip install --pre hpy
 
 ## Successful build
 python3 setup.py bdist_wheel
-pip install . # SUCCESS
-pip install --no-use-pep-517 . # SUCCESS
+pip install dist/*.whl # SUCCESS
 
-## First failed build mode
-pip install --use-pep517       # FAILURE
-
-## Second failed build mode
-touch pyproject.toml
-python3 setup.py bdist_wheel
-pip install .                  # FAILURE
-pip install --use-pep517 .     # FAILURE
-pip install --no-use-pep517 .  # SUCCESS
-
-## Third failed build mode
+## Failed build
 mv pyproject.toml.new pyproject.toml   # Use a basic pyproject.toml with backend and project info
 python3 setup.py bdist_wheel   # FAILURE
 ```

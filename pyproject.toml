@@ -1,0 +1,8 @@
+[build-system]
+requires = ["setuptools>=67.0", "setuptools_scm[toml]>=7.0", "wheel", "hpy", "numpy >= 1.10"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "quickstart"
+version = "0.0.1"
+

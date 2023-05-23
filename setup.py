@@ -3,7 +3,6 @@
 from setuptools import setup, Extension
 
 setup(
-    name="hpy-quickstart",
     hpy_ext_modules=[
         Extension('quickstart.hello', sources=['quickstart/hello.c']),
     ],
